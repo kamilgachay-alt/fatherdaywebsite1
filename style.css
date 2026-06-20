@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
   color: white;
 }
 
-/* Center everything */
+/* Center layout for all pages */
 .container {
   height: 100vh;
   display: flex;
@@ -18,20 +18,27 @@ body {
 
 /* Main title */
 h1 {
-  font-size: 48px;
-  margin-bottom: 30px;
+  font-size: 44px;
+  margin-bottom: 25px;
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Button */
+/* Paragraph text */
+p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* Buttons */
 button {
   padding: 14px 28px;
-  font-size: 18px;
+  font-size: 17px;
   border: none;
   border-radius: 14px;
   cursor: pointer;
   background: white;
   color: black;
+  margin: 8px;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -44,9 +51,19 @@ button:hover {
 
 /* Small text */
 .small {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 18px;
   opacity: 0.85;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Big image */
+.big-image {
+  width: 90%;
+  max-width: 650px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   animation: fadeIn 1.5s ease-in-out;
 }
 
