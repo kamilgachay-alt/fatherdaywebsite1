@@ -5,28 +5,31 @@ body {
   color: white;
 }
 
-/* Center layout for all pages */
+/* Page layout */
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-/* Main title */
+/* Title */
 h1 {
   font-size: 44px;
-  margin-bottom: 25px;
-  animation: fadeIn 1.2s ease-in-out;
+  margin-bottom: 20px;
+  max-width: 900px;
 }
 
-/* Paragraph text */
+/* Paragraph like a letter */
 p {
   font-size: 18px;
-  opacity: 0.85;
+  opacity: 0.9;
+  max-width: 700px;
+  line-height: 1.6;
 }
 
 /* Buttons */
@@ -38,9 +41,9 @@ button {
   cursor: pointer;
   background: white;
   color: black;
-  margin: 8px;
+  margin: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 /* Hover effect */
@@ -49,32 +52,29 @@ button:hover {
   background: #e5e7eb;
 }
 
-/* Small text */
-.small {
-  margin-top: 15px;
-  font-size: 18px;
-  opacity: 0.85;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Big image */
+/* Image */
 .big-image {
   width: 90%;
   max-width: 650px;
   border-radius: 20px;
   margin-top: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  animation: fadeIn 1.5s ease-in-out;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  animation: fadeIn 1.4s ease-in-out;
 }
 
 /* Fade animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Smooth page feel */
+a {
+  text-decoration: none;
 }
